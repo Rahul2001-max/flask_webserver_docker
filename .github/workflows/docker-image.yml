@@ -19,6 +19,6 @@ jobs:
         USER: ${{ secrets.USER }}
         PASS: ${{ secrets.PASS }}   
       run: |        
-        docker build . --file Dockerfile --tag rahul2001docker/devops-ci-flask-webserver-2026:v1
+        docker build . --file dockerFlaskWebserver --tag rahul2001docker/devops-ci-flask-webserver-2026:v1
         docker login -u $USER -p $PASS        
         docker push rahul2001docker/devops-ci-flask-webserver-2026:v1
